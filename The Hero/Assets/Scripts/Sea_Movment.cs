@@ -17,7 +17,8 @@ public class Sea_Movment : MonoBehaviour
     {
        Vector2 offset =  meshRenderer.material.mainTextureOffset;
        offset = offset + new Vector2(0,speed * Time.deltaTime);
-       meshRenderer.material.mainTextureOffset = offset;
-        
+       meshRenderer.material.mainTextureOffset = offset; 
+
+    
     }
 }
