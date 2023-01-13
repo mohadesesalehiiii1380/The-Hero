@@ -8,13 +8,20 @@ public class Score_Manager : MonoBehaviour
     public int score= 0;
     void Start()
     {
-        
+     StartCoroutine(Score());   
     }
 
     // Update is called once per frame
     void Update()
     {
-        score = score + 1;
+       
+    }
+    IEnumerator Score(){
+       while (true)
+       {
+            yield return new WaitForSeconds(2);
+         score = score + 1;
         Debug.Log("Score :" + score);
+       }
     }
 }
