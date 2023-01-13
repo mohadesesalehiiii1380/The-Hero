@@ -18,17 +18,20 @@ public class Player_Movment : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow)){
             transform.position += new Vector3 (speed * Time.deltaTime , 0,0);
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0,-15),rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0,-45),rotationSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow)){
             transform.position -= new Vector3 (speed * Time.deltaTime , 0,0);
-             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0,15),rotationSpeed * Time.deltaTime);
+             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0,45),rotationSpeed * Time.deltaTime);
         }
         if(transform.position.x < -2.41f){
              transform.position = new Vector3(-2.41f, transform.position.y,transform.position.z);
         }
           if(transform.position.x > 2.41f){
              transform.position = new Vector3(2.41f,transform.position.y,transform.position.z);
+        }
+        if(transform.rotation.z !=20){
+             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0,0),rotationSpeed * Time.deltaTime);
         }
     }
 }
