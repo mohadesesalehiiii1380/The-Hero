@@ -17,7 +17,8 @@ public class Obstacle_Spawner : MonoBehaviour
     }
     void obstacles (){
         int rand = Random.Range(0,obstacle.Length);
-        Instantiate(obstacle[rand],transform.position,Quaternion.identity);
+        float randXPos = Random.Range(-2.41f , 2.41f);
+        Instantiate(obstacle[rand],new Vector3(randXPos,transform.position.y,transform.position.z ),Quaternion.identity);
 
     }
     IEnumerator SpawnObstacles(){
