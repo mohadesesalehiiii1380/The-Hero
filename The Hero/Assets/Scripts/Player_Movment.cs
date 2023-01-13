@@ -37,7 +37,7 @@ public class Player_Movment : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision){
         if (collision.gameObject.tag == "Fishes")
         {
-            Debug.Log(collision.gameObject.name); 
+            Time.timeScale = 0;
         }
        
     }
