@@ -7,7 +7,8 @@ public class Player_Movment : MonoBehaviour
     // Start is called before the first frame update
     public Transform transform;
     public float speed = 1.5f;
-     public float rotationSpeed = 5f;
+    public float rotationSpeed = 5f;
+public Score_Manager Score_Value;
     void Start()
     {
         
@@ -39,6 +40,12 @@ public class Player_Movment : MonoBehaviour
         {
             Time.timeScale = 0;
         }
+        if (collision.gameObject.tag == "coin")
+        {
+            Destroy(collision.gameObject);
+            Score_Value.score += 10;
+        }
        
     }
+
 }

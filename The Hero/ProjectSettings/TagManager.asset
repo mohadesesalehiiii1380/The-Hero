@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fishes
+  - coin
   layers:
   - Default
   - TransparentFX
