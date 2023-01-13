@@ -34,4 +34,5 @@ public class Player_Movment : MonoBehaviour
              transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0,0,0),rotationSpeed * Time.deltaTime);
         }
     }
+    
 }
