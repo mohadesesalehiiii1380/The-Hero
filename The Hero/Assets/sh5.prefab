@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 3683249607028653334}
   - component: {fileID: 3707276958482660287}
   - component: {fileID: 8242495538037482123}
+  - component: {fileID: -6094101903490347562}
   m_Layer: 0
   m_Name: sh5
-  m_TagString: Untagged
+  m_TagString: Fishes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,3 +100,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transform: {fileID: 8998739616311169657, guid: 03c4d53d345f54c448b421e11c6794fa, type: 3}
   speed: 4
+--- !u!61 &-6094101903490347562
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8010878085722661858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.15, y: 2.33}
+    newSize: {x: 2.15, y: 2.33}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.15, y: 2.33}
+  m_EdgeRadius: 0

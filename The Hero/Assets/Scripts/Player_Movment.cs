@@ -35,6 +35,10 @@ public class Player_Movment : MonoBehaviour
         }
     }
     private void OnTriggerEnter2D(Collider2D collision){
-        Debug.Log(collision.gameObject.name);
+        if (collision.gameObject.tag == "Fishes")
+        {
+            Debug.Log(collision.gameObject.name); 
+        }
+       
     }
 }
