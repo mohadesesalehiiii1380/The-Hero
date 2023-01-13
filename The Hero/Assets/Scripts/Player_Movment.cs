@@ -18,5 +18,14 @@ public class Player_Movment : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow)){
             transform.position += new Vector3 (speed * Time.deltaTime , 0,0);
         }
+        if (Input.GetKey(KeyCode.LeftArrow)){
+            transform.position -= new Vector3 (speed * Time.deltaTime , 0,0);
+        }
+        if(transform.position.x < -2.41f){
+             transform.position = new Vector3(-2.41f, transform.position.y,transform.position.z);
+        }
+          if(transform.position.x > 2.41f){
+             transform.position = new Vector3(2.41f,transform.position.y,transform.position.z);
+        }
     }
 }
