@@ -8,10 +8,12 @@ public class Player_Movment : MonoBehaviour
     public Transform transform;
     public float speed = 1.5f;
     public float rotationSpeed = 5f;
-public Score_Manager Score_Value;
+    public Score_Manager Score_Value;
+    public GameObject  gameOverPanel;
     void Start()
     {
-        
+        gameOverPanel.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -39,6 +41,7 @@ public Score_Manager Score_Value;
         if (collision.gameObject.tag == "Fishes")
         {
             Time.timeScale = 0;
+            gameOverPanel.SetActive(true);
         }
         if (collision.gameObject.tag == "coin")
         {
