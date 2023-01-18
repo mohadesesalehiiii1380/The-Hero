@@ -11,6 +11,8 @@ public class Player_Movment : MonoBehaviour
     public Score_Manager Score_Value;
     public GameObject  gameOverPanel;
     public  AudioSource CoinSound;
+    //public  AudioSource Boating_sound;
+    
     void Start()
     {
         gameOverPanel.SetActive(false);
@@ -42,6 +44,8 @@ public class Player_Movment : MonoBehaviour
         if (collision.gameObject.tag == "Fishes")
         {
             Time.timeScale = 0;
+           // Boating_sound.Stop();
+          
             gameOverPanel.SetActive(true);
         }
         if (collision.gameObject.tag == "coin")
