@@ -17,10 +17,10 @@ public class Score_Manager : MonoBehaviour
     {
 
      StartCoroutine(Score());  
-     StartCoroutine(Reload()); 
+     //StartCoroutine(Reload()); 
      highScore= PlayerPrefs.GetInt("high_score",0);
-     HighScoreText.text="High Score:"+highScore.ToString();
-     LastScoreText.text="Last Score:"+lastScore.ToString();
+     HighScoreText.text="High Score:" + highScore.ToString();
+     LastScoreText.text="Last Score:" + lastScore.ToString();
     }
 
     // Update is called once per frame
