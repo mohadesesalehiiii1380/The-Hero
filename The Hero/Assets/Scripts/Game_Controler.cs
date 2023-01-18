@@ -14,6 +14,7 @@ public class Game_Controler : MonoBehaviour
    public Score_Manager score_manager;
    public GameObject gamePausePanel;
    public GameObject gamePauseButton;
+   
 
     void Start()
     {
