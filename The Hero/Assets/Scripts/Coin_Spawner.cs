@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin_Spawner : MonoBehaviour
 {
     public GameObject coinPrefabs;
+    
     // Start is called before the first frame update
     
     void Start()
@@ -25,6 +26,7 @@ public class Coin_Spawner : MonoBehaviour
        IEnumerator CoinSpawner(){
            while (true)
            {
+              
                int time = Random.Range(4,10);
                yield return new WaitForSeconds(5);
                CoinSpawn();
